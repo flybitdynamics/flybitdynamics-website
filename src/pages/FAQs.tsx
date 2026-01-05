@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import faqBanner from "@/assets/b4.jpg";
-import { 
+import {
   Accordion,
   AccordionContent,
   AccordionItem,
@@ -21,7 +21,7 @@ const faqCategories = [
       },
       {
         question: "What's the cost of a drone light show?",
-        answer: "Pricing depends on several factors including the number of drones, show duration, complexity of choreography, location, and special requirements. Our packages start from ₹1,50,000 for social events and scale up for larger productions. We provide detailed quotes after understanding your specific needs during our free consultation."
+        answer: "Pricing depends on several factors including the number of drones, show duration, complexity of choreography, location, and special requirements. We provide detailed quotes after understanding your specific needs during our free consultation."
       },
       {
         question: "How much advance notice do you need for booking?",
@@ -137,7 +137,7 @@ export default function FAQs() {
             {faqCategories.map((category, index) => (
               <Button
                 key={index}
-                
+
                 onClick={() => setSelectedCategory(index)}
                 className="transition-all duration-300 bg-white text-black border border-[#e4e6eb] hover:text-white "
               >
@@ -151,7 +151,7 @@ export default function FAQs() {
             <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">
               {faqCategories[selectedCategory].title}
             </h2>
-            
+
             <Accordion type="single" collapsible className="space-y-4">
               {faqCategories[selectedCategory].faqs.map((faq, index) => (
                 <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg">
@@ -187,8 +187,8 @@ export default function FAQs() {
               <p className="text-muted-foreground mb-4">
                 Speak directly with our experts for immediate assistance.
               </p>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
                 onClick={() => window.location.href = "tel:+919664612798"}
               >
@@ -202,7 +202,7 @@ export default function FAQs() {
               <p className="text-muted-foreground mb-4">
                 Quick responses to your questions via WhatsApp.
               </p>
-              <Button 
+              <Button
                 className="bg-white text-black border border-[#e4e6eb] hover:text-white"
                 onClick={() => window.open('https://wa.me/919664612798?text=Hi! I have some questions about your drone light show services.', '_blank')}
               >
@@ -216,8 +216,8 @@ export default function FAQs() {
               <p className="text-muted-foreground mb-4">
                 Detailed responses within 24 hours.
               </p>
-              <Button 
-                variant="outline" 
+              <Button
+                variant="outline"
                 className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
                 onClick={() => window.location.href = "mailto:info@flybitdynamics.com?subject=Question about Drone Light Show Services"}
               >
