@@ -25,9 +25,9 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+91 9664612798"],
+    details: ["+91 9227428262", "+91 9979850863"],
     action: "Call Now",
-    onClick: () => window.location.href = "tel:+919664612798"
+    onClick: () => window.location.href = "tel:+9227428262"
   },
   {
     icon: Mail,
@@ -71,7 +71,7 @@ const socialLinks = [
 export default function Contact() {
   useEffect(() => {
     document.title = "Contact FLYBIT Dynamics | Book Drone Light Show India | Get Quote";
-    document.querySelector('meta[name="description"]')?.setAttribute('content', 'Contact FLYBIT Dynamics for booking drone light shows in India. Get quotes for wedding shows, corporate events, and aerial displays. Call +91 9664612798 for free consultation.');
+    document.querySelector('meta[name="description"]')?.setAttribute('content', 'Contact FLYBIT Dynamics for booking drone light shows in India. Get quotes for wedding shows, corporate events, and aerial displays. Call +91 9227428262 for free consultation.');
   }, []);
 
   const { toast } = useToast();
@@ -262,7 +262,7 @@ export default function Contact() {
                         onChange={handleInputChange}
                         required
                         className="mt-2"
-                        placeholder="+91 9664612798"
+                        placeholder="+91 9227428262"
                       />
                     </div>
                     <div>
@@ -478,16 +478,16 @@ export default function Contact() {
               size="lg" 
               variant="secondary" 
               className="text-md md:text-lg px-8 py-4"
-              onClick={() => window.location.href = "tel:+919664612798"}
+              onClick={() => window.location.href = "tel:+9227428262"}
             >
               <Phone className="mr-2 w-5 h-5" />
-              Call Now: +91 9664612798
+              Call Now: +91 9979850863
             </Button>
             <Button 
               size="lg" 
               variant="outline" 
               className="text-[#3D473B] border-white bg-white hover:bg-primary hover:text-white text-md md:text-lg px-8 py-4"
-              onClick={() => window.open('https://wa.me/919664612798?text=Hi! I am interested in your drone light show services.', '_blank')}
+              onClick={() => window.open('https://wa.me/919227428262?text=Hi! I am interested in your drone light show services.', '_blank')}
             >
               <MessageCircle className="mr-2 w-5 h-5" />
               WhatsApp Us
