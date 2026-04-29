@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import flybitLogo from "@/assets/flybit-logo.png";
 
 type NavItem = {
   name: string;
@@ -51,7 +50,7 @@ export function Navigation() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center">
-            <img src="/lovable-uploads/ff447dbb-7066-4d66-b0e3-99bd3e8b7f9a.png" alt="FLYBIT Dynamics" className="h-10 w-auto" />
+            <img src="/FLYBIT%20dynamics%20logo_01.png" alt="FLYBIT Dynamics" className="h-10 w-auto" />
           </Link>
 
           {/* Desktop Navigation */}
