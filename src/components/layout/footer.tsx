@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Instagram, Youtube, Linkedin, MessageCircle } from "lucide-react";
-import flybitLogo from "@/assets/flybit-logo.png";
 
 const navigation = {
   company: [
@@ -40,7 +39,7 @@ export function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <Link to="/" className="flex items-center mb-6">
-              <img src="/lovable-uploads/32653dea-0b30-472d-83b7-4682377a49ba.png" alt="FLYBIT Dynamics" className="h-10 w-auto" />
+              <img src="/FLYBIT%20dynamics%20logo_01_white.png" alt="FLYBIT Dynamics" className="h-10 w-auto" />
             </Link>
             <p className="text-secondary-foreground/80 mb-6 max-w-md">
               We are storytellers of the sky, creating magical drone light shows that transform your special moments into unforgettable experiences.
