@@ -56,8 +56,11 @@ export function Footer() {
                 <span>info@flybitdynamics.com</span>
               </div>
               <div className="flex items-center space-x-3">
-                <MapPin className="w-5 h-5 text-primary" />
-                <span>511, Satyamev Eminence, Science City Road, Sola, Ahmedabad 380060</span>
+                <MapPin className="w-15 h-15 text-primary -mt-20" />
+                <div className="flex flex-col space-y-2">
+                <span>Office Addres : 511, Satyamev Eminence, Science City Road, Sola, Ahmedabad 380060</span> 
+                <span>Branch Address : 82 B , Gopal nagar - A GopalPpura Bypass Rd, Jaipur 302018</span>
+                </div>
               </div>
             </div>
           </div>
