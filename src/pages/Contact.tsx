@@ -39,7 +39,7 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Location",
-    details: ["511, Satyamev Eminence, Science City Road", "Sola, Ahmedabad 380060"],
+    details: ["Office Address : 511, Satyamev Eminence, Science City Road", "Sola, Ahmedabad 380060 | ", "Branch Address : 82 B , Gopal nagar - A GopalPpura Bypass Rd, Jaipur 302018 |"],
     action: "Get Directions",
     onClick: () => window.open("https://maps.app.goo.gl/rDX4KkEGiytgmHaV6", "_blank")
   },
