@@ -137,9 +137,9 @@ app.post('/api/contact', async (req, res) => {
         <div style="background-color: #e8f5e8; padding: 20px; border-radius: 8px; margin: 20px 0;">
           <h3 style="color: #2d5a2d; margin-top: 0;">📞 Need Immediate Assistance?</h3>
           <p style="margin-bottom: 15px;">If you need urgent assistance, feel free to contact us directly:</p>
-          <p style="margin: 5px 0;"><strong>📞 Phone:</strong> <a href="tel:+919664612798" style="color: #2d5a2d;">+91 9664612798</a></p>
+          <p style="margin: 5px 0;"><strong>📞 Phone:</strong> <a href="tel:+919979850863" style="color: #2d5a2d;">+91 9979850863</a></p>
           <p style="margin: 5px 0;"><strong>📧 Email:</strong> <a href="mailto:info@flybitdynamics.com" style="color: #2d5a2d;">info@flybitdynamics.com</a></p>
-          <p style="margin: 5px 0;"><strong>💬 WhatsApp:</strong> <a href="https://wa.me/919664612798" style="color: #2d5a2d;">Click to chat</a></p>
+          <p style="margin: 5px 0;"><strong>💬 WhatsApp:</strong> <a href="https://wa.me/919979850863" style="color: #2d5a2d;">Click to chat</a></p>
         </div>
 
         <div style="text-align: center; margin-top: 30px; padding: 20px; background-color: #f5a30a; border-radius: 8px;">

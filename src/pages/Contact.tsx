@@ -6,13 +6,13 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import contactBanner from "@/assets/b8.jpg";
-import  contactimag from "@/assets/contact/contact.jpg";
-import { 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Clock, 
-  MessageCircle, 
+import contactimag from "@/assets/contact/contact.jpg";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  MessageCircle,
   Send,
   Instagram,
   Youtube,
@@ -101,10 +101,10 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Frontend validation
     console.log('🔍 Frontend validation - Form data:', formData);
-    
+
     if (!formData.eventType) {
       console.log('❌ Frontend validation failed - Event type is empty');
       toast({
@@ -114,12 +114,12 @@ export default function Contact() {
       });
       return;
     }
-    
+
     console.log('✅ Frontend validation passed');
-    
+
     try {
       const submissionTime = new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" });
-      
+
       // Data to be sent
       const formDataWithTime = {
         ...formData,
@@ -140,7 +140,7 @@ export default function Contact() {
       console.log('🚀 Sending request to backend server...');
       console.log('📤 Request URL:', 'https://flybitemailserver.vercel.app/api/contact');
       console.log('📦 Request data:', formDataWithTime);
-      
+
       const backendResponse = await fetch('https://flybitemailserver.vercel.app/api/contact', {
         method: 'POST',
         headers: {
@@ -148,7 +148,7 @@ export default function Contact() {
         },
         body: JSON.stringify(formDataWithTime)
       });
-      
+
       console.log('📥 Backend response status:', backendResponse.status);
       console.log('📥 Backend response ok:', backendResponse.ok);
 
@@ -169,7 +169,7 @@ export default function Contact() {
           description: "Thank you for your interest. We'll get back to you within 24 hours.",
         });
       }
-      
+
       // Reset form
       setFormData({
         name: "",
@@ -194,7 +194,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
-      <section 
+      <section
         className="py-10 md:py-20 text-white relative"
         style={{
           backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)), url(${contactBanner})`,
@@ -221,7 +221,7 @@ export default function Contact() {
               <h2 className="text-3xl md:text-4xl font-bold mb-8">
                 <span className="text-[#f5a30a]">Connect</span> <span className="text-[#3D473B]">With us</span>
               </h2>
-              
+
               <Card className="p-8 card-gradient text-[#3D473B]">
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -273,8 +273,8 @@ export default function Contact() {
                         </SelectTrigger>
                         <SelectContent>
                           {eventTypes.map((type) => (
-                            <SelectItem 
-                              key={type} 
+                            <SelectItem
+                              key={type}
                               value={type}
                               className="hover:bg-[#f5a30a] hover:text-white focus:bg-[#f5a30a] focus:text-white cursor-pointer"
                             >
@@ -331,12 +331,12 @@ export default function Contact() {
                   </Button>
                 </form>
               </Card>
-              
+
               {/* Contact Image */}
               <div className="mt-8">
-                <img 
+                <img
                   src={contactimag}
-                  alt="Contact FLYBIT Dynamics - Professional drone show consultation" 
+                  alt="Contact FLYBIT Dynamics - Professional drone show consultation"
                   className="w-full h-auto md:h-64 object-cover rounded-lg shadow-lg"
                 />
               </div>
@@ -344,24 +344,24 @@ export default function Contact() {
 
             {/* Contact Information */}
             <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-8 text-[#3D473B]">
-              Get in <span className="text-[#f5a30a]">Touch</span>
-            </h2>              <div className="space-y-6 mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-[#3D473B]">
+                Get in <span className="text-[#f5a30a]">Touch</span>
+              </h2>              <div className="space-y-6 mb-8">
                 {contactInfo.map((info, index) => (
                   <Card key={index} className="p-6 card-gradient hover:shadow-lg transition-all duration-300 group">
                     <div className="flex items-start space-x-4">
                       <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
                         <info.icon className="w-6 h-6 text-primary" />
                       </div>
-                      
+
                       <div className="flex-1">
                         <h3 className="text-md md:text-lg font-semibold mb-2 text-[#3D473B]">{info.title}</h3>
                         {info.details.map((detail, idx) => (
                           <p key={idx} className="text-muted-foreground">{detail}</p>
                         ))}
-                        <Button 
+                        <Button
                           // variant="outline" 
-                          size="sm" 
+                          size="sm"
                           className="mt-3 hover:[#f5a30a] bg-white text-[#3D473B] border border-[#e4e6eb] hover:border-white"
                           onClick={info.onClick}
                         >
@@ -380,7 +380,7 @@ export default function Contact() {
                   <Button 
                     variant="outline" 
                     className="w-full justify-start"
-                    onClick={() => window.open('https://wa.me/919664612798?text=Hi! I am interested in your drone light show services.', '_blank')}
+                    onClick={() => window.open('https://wa.me/919979850863?text=Hi! I am interested in your drone light show services.', '_blank')}
                   >
                     <MessageCircle className="mr-2 w-4 h-4" />
                     WhatsApp Chat
@@ -431,7 +431,7 @@ export default function Contact() {
               Located in Ahmedabad, our studio is equipped with the latest drone technology and testing facilities.
             </p>
           </div>
-          
+
           <Card className="h-96 overflow-hidden relative">
             {/* Replace the src URL with your Google Maps embed URL */}
             <iframe
@@ -441,18 +441,18 @@ export default function Contact() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
-            
+
             {/* Overlay with contact details */}
             <div className="absolute top-4 left-4 bg-background p-4 rounded-lg shadow-lg max-w-sm">
               <h3 className="text-xl font-semibold mb-2 flex items-center">
                 <MapPin className="w-5 h-5 text-primary mr-2" />
-                  Flybit Dynamics Pvt Ltd
+                Flybit Dynamics Pvt Ltd
               </h3>
               <p className="text-muted-foreground text-sm mb-3">
                 511, Satyamev Eminence, Science City Road<br />
                 Sola, Ahmedabad 380060
               </p>
-              <Button 
+              <Button
                 size="sm"
                 onClick={() => window.open('https://maps.app.goo.gl/rDX4KkEGiytgmHaV6', '_blank')}
                 className="w-full bg-[#f5a30a]"
@@ -474,20 +474,20 @@ export default function Contact() {
             Join hundreds of satisfied clients who have made their events unforgettable with FLYBIT Dynamics.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              size="lg" 
-              variant="secondary" 
+            <Button
+              size="lg"
+              variant="secondary"
               className="text-md md:text-lg px-8 py-4"
-              onClick={() => window.location.href = "tel:+9227428262"}
+              onClick={() => window.location.href = "tel:+919979850863"}
             >
               <Phone className="mr-2 w-5 h-5" />
               Call Now: +91 9979850863
             </Button>
-            <Button 
-              size="lg" 
-              variant="outline" 
+            <Button
+              size="lg"
+              variant="outline"
               className="text-[#3D473B] border-white bg-white hover:bg-primary hover:text-white text-md md:text-lg px-8 py-4"
-              onClick={() => window.open('https://wa.me/919227428262?text=Hi! I am interested in your drone light show services.', '_blank')}
+              onClick={() => window.open('https://wa.me/919979850863?text=Hi! I am interested in your drone light show services.', '_blank')}
             >
               <MessageCircle className="mr-2 w-5 h-5" />
               WhatsApp Us

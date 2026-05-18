@@ -106,7 +106,7 @@ export default function PrivacyPolicy() {
             </p>
             <div className="mt-4">
               <p><strong>Email:</strong> info@flybitdynamics.com</p>
-              <p><strong>Phone:</strong> +91 9664612798</p>
+              <p><strong>Phone:</strong> +91 9979850863</p>
               <p><strong>Address:</strong> 51.1 Satyamev Eminence, Science City Road, Sola, Ahmedabad 380060</p>
             </div>
           </section>

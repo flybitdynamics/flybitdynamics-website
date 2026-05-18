@@ -190,9 +190,9 @@ export default function FAQs() {
               <Button
                 variant="outline"
                 className="group-hover:bg-primary group-hover:text-primary-foreground transition-colors"
-                onClick={() => window.location.href = "tel:+919664612798"}
+                onClick={() => window.location.href = "tel:+919979850863"}
               >
-                +91 9664612798
+                +91 9979850863
               </Button>
             </Card>
 
@@ -204,7 +204,7 @@ export default function FAQs() {
               </p>
               <Button
                 className="bg-white text-black border border-[#e4e6eb] hover:text-white"
-                onClick={() => window.open('https://wa.me/919664612798?text=Hi! I have some questions about your drone light show services.', '_blank')}
+                onClick={() => window.open('https://wa.me/919979850863?text=Hi! I have some questions about your drone light show services.', '_blank')}
               >
                 Start Chat
               </Button>
